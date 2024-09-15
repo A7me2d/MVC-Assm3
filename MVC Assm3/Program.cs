@@ -52,9 +52,15 @@ namespace MVC_Assm3
             #endregion
 
 
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "/{Controller = Home }/{Action = Index}",
+            //app.MapControllerRoute(
+            //    name: "default",
+            //    pattern: "/{Controller = Home }/{Action = Index}",
+            //    defaults: new { Controller = "Home", Action = "Index" }
+            //    );
+
+              app.MapControllerRoute(
+                name: "Default",
+                pattern: "/{Controller}/{Action}/{id:int?}",
                 defaults: new { Controller = "Home", Action = "Index" }
                 );
 

@@ -9,7 +9,7 @@ namespace MVC_Assm3.Controllers
             return View();
         }
 
-        public IActionResult AboutUSs()
+        public IActionResult AboutUS()
         {
             return View();
         }
